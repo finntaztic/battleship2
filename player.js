@@ -5,4 +5,6 @@ export class Player {
         this.type = type;
         this.gameBoard = new Gameboard();
     }
+
+    
 }

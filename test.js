@@ -31,3 +31,4 @@ test ('receiving attack', () => {
     const result = board.receiveAttack([2,8]);
     expect(result).toBe('miss')
 })
+
