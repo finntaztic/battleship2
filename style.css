@@ -1,0 +1,22 @@
+
+.box {
+    display: flex;
+    outline: solid black;
+    height: 2em;
+    width: 2em;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.human, .computer {
+    display: grid;
+    background-color: red;
+    height: 14em;
+    width: 14em;
+    grid-template-columns: repeat(7, 2em);
+    grid-template-rows: repeat(7, 2em);
+}
+

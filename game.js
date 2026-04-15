@@ -1,17 +1,15 @@
 export class game {
-    renderBoard (){
+    renderBoard (playerName){
 
-        console.log('testing renderboard')
         let row = 7;
         let col = 7;
 
-        const container = document.querySelector('.container')
-        const containerDiv = document.createElement('div');
-        container.appendChild(containerDiv);
+        const containerDiv = document.querySelector(playerName);//container div
 
         for (let i = 0; i < row; i++){
             for (let j = 0; j < col; j++){
                 const div = document.createElement('div');
+                div.className = 'box'
                 containerDiv.appendChild(div);
                 div.dataset.row = i;
                 div.dataset.col = j;
@@ -21,5 +19,5 @@ export class game {
 }
 
 
-//how do i render the board for each human and comupuet just one function? 
+//how do i render the board for each human and computer just one function? 
 //
