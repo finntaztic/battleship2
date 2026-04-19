@@ -1,6 +1,10 @@
 import { game } from "./game.js";
-
 const newGame = new game();
+
+import { Player } from "./player.js";
+
+const player = new Player();
+console.log(player)
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
@@ -15,3 +19,10 @@ btn.addEventListener('click', () => {
     newGame.renderBoard('.human')
     newGame.renderBoard('.computer')
 })
+
+btn.onclick = function (){
+    this.disabled = true;
+}
+
+//create player with assigned ships/ then make it occupy the board
+

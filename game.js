@@ -1,6 +1,5 @@
 export class game {
     renderBoard (playerName){
-
         let row = 7;
         let col = 7;
 
@@ -16,8 +15,9 @@ export class game {
             }
         }
     }
+
+    renderShip = () => {
+        
+    }
 }
 
-
-//how do i render the board for each human and computer just one function? 
-//
