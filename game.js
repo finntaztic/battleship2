@@ -1,3 +1,5 @@
+import { Gameboard } from "./gameboard.js";
+
 export class game {
     renderBoard (playerName){
         let row = 7;
@@ -16,8 +18,11 @@ export class game {
         }
     }
 
-    renderShip = () => {
-        
+    renderShip(){
+        console.log(Gameboard)
+        //get the placed ship
+        //loop and add them to certain coordinates in the table
     }
 }
+
 

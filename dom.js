@@ -3,8 +3,11 @@ const newGame = new game();
 
 import { Player } from "./player.js";
 
-const player = new Player();
-console.log(player)
+const humanPlayer = new Player('human');
+humanPlayer.gameBoard.placeShip([2,3], 3, 'horizontal');
+console.log(humanPlayer)
+
+console.log(game.renderShip())
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
