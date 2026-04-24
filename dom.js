@@ -1,10 +1,5 @@
 import { game } from "./game.js";
 const games = new game();
-import { Gameboard } from "./gameboard.js";
-
-const gameBoard = new Gameboard();
-console.log(gameBoard.placeShip())
-
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
