@@ -1,13 +1,10 @@
 import { game } from "./game.js";
-const newGame = new game();
+const games = new game();
+import { Gameboard } from "./gameboard.js";
 
-import { Player } from "./player.js";
+const gameBoard = new Gameboard();
+console.log(gameBoard.placeShip())
 
-const humanPlayer = new Player('human');
-humanPlayer.gameBoard.placeShip([2,3], 3, 'horizontal');
-console.log(humanPlayer)
-
-console.log(game.renderShip())
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
@@ -19,8 +16,8 @@ btn.addEventListener('click', () => {
     container.append(human)
     container.append(computer)
 
-    newGame.renderBoard('.human')
-    newGame.renderBoard('.computer')
+    games.renderBoard('.human')
+    games.renderBoard('.computer')
 })
 
 btn.onclick = function (){

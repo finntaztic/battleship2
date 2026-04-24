@@ -1,5 +1,22 @@
 
-import { Ship } from "./ship.js";
+export class Ship {
+    constructor(length, hit, sunk){
+        this.length = length;
+        this.hit = 0;
+        this.sunk = sunk;
+    }
+
+    addHit (){
+        this.hit ++;
+        return this.hit;
+    }
+
+    isSunk(){
+        if (this.length <= this.hit){
+            return this.sunk = true;
+        } else return this.sunk = false;
+    }
+}
 
 export class Gameboard {
     constructor(){
@@ -80,4 +97,9 @@ export class Gameboard {
     }
 }
 
-
+export class Player {
+    constructor(type){
+        this.type = type;
+        this.gameBoard = new Gameboard();
+    }
+}

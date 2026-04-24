@@ -32,3 +32,13 @@ test ('receiving attack', () => {
     expect(result).toBe('miss')
 })
 
+test ('placed ships', () => {
+    const board = new Gameboard();
+    board.placeShip([2,5], 3, 'horizontal');
+
+    const result = board.receiveAttack([2,8]);
+    expect(result).toBe('miss')
+})
+
+
+
