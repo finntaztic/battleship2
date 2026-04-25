@@ -1,8 +1,6 @@
 import { Gameboard } from "./gameboard.js";
-import { Player } from "./player.js";
 
 export class game {
-
     renderBoard (playerName){
         let row = 7;
         let col = 7;
@@ -19,9 +17,6 @@ export class game {
             }
         }
     }
-
-    //renderShip - add ship 
-    //
 }
 
 

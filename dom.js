@@ -1,5 +1,7 @@
 import { game } from "./game.js";
 const games = new game();
+import { GameController } from "./gameController.js";
+GameController().addShip;
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
@@ -18,6 +20,9 @@ btn.addEventListener('click', () => {
 btn.onclick = function (){
     this.disabled = true;
 }
+
+
+// GameController().addShips();
 
 //create player with assigned ships/ then make it occupy the board
 

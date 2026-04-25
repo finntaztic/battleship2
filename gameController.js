@@ -1,11 +1,10 @@
 
-import { Player } from "./player.js";
+import { Player } from "./gameboard.js";
 import { Gameboard } from "./gameboard.js";
 
 let gameBoard = new Gameboard;
 
-function GameController (){
-
+export function GameController (){
     let p1;
     let p2;
 
