@@ -14,8 +14,15 @@ export function GameController (){
     }
 
     const addShips = () => {
+        newGame()
+        p1.gameBoard.placeShip([2,3], 3, 'horizontal');
         console.log(p1)
-        // p1.gameboard.placeShip([2,3], 3, 'horizontal');
+        console.log(p1.gameBoard.marked)
+
         //get the player and add ship on it
+    }
+
+    return {
+        addShips
     }
 }
