@@ -1,6 +1,6 @@
 
-import { Player } from "./gameboard.js";
 import { Gameboard } from "./gameboard.js";
+import { Player } from "./gameboard.js";
 
 let gameBoard = new Gameboard;
 
@@ -13,16 +13,37 @@ export function GameController (){
         p2 = new Player ('computer');
     }
 
-    const addShips = () => {
-        newGame()
-        p1.gameBoard.placeShip([2,3], 3, 'horizontal');
-        console.log(p1)
-        console.log(p1.gameBoard.marked)
+    const getPlayer1 = () => p1;
+    const getPlayer2 = () => p2;
 
-        //get the player and add ship on it
+    const addShips = () => {
+        newGame();
+        p1.gameBoard.placeShip([2,3], 3, 'horizontal');
+        p2.gameBoard.placeShip([3,5], 4, 'horizontal');
     }
+
+    const renderShips = (marker) => {
+        // console.log('hello')
+        // console.log(gameBoard.marked)
+
+        // let x = marker;
+        // console.log(x)
+        // renderShips(p1.gameBoard.marked)
+
+        //loop through the marked
+        //add them to cells using col and row
+
+
+
+    }
+
+
 
     return {
-        addShips
+        getPlayer1,
+        getPlayer2,
+        addShips,
+        renderShips
     }
 }
+

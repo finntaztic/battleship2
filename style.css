@@ -1,7 +1,7 @@
 
 .box {
     display: flex;
-    outline: solid black;
+    outline: 1px solid black;
     height: 2em;
     width: 2em;
 }
